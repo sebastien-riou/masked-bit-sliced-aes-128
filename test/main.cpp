@@ -129,6 +129,7 @@ int main(void){
     clock_t start, end;
     uint32_t iterations = 100000;
     uint8_t out[16];
+    printf("Contact: %s@%s\n","sriou","nimp.co.uk");
     {
         char * pa[2];
         char * pa1 = (char *)&pa[1];

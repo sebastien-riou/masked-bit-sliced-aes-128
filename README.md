@@ -17,7 +17,7 @@ For example the figure below is the call graph of the core function:
 The security concept is sound so the security level could be rather high however this code is only a demo. As it is, it does not provide any security for many reasons. In particular:
 - It is coded in C. Side channel resistance cannot be guaranteed by this concept without resorting to assembly code. It may not leak on a particular CPU with a particular compiler with particular settings but you can take for granted that it does leak big time at least in one combination, if not in most combinations.
 - It is just boolean masking, it does not contain any other countermeasure.
-- No security evaluation has been done.
+- No security evaluation has been done. If you give it a spin please get in touch (email is printed by the test program).
 
 Note the security level depends heavily on the quality of the random numbers provided by the get_random_bitslice callback.
 
