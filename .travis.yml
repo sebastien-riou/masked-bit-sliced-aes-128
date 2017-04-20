@@ -1,0 +1,32 @@
+# travis.yml
+
+os:
+  - linux
+#  - osx
+
+compiler:
+  - gcc
+#  - clang
+
+matrix:
+  exclude:
+      - os: osx
+        compiler: gcc
+
+sudo: false
+language: cpp
+
+install:
+- if [ "$CXX" = "g++" ]; then export CXX="g++-4.8" CC="gcc-4.8"; fi
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - gcc-4.8
+    - g++-4.8
+    - clang
+
+script:
+  - ./build_test.sh
+  - ./masked-bit-sliced-aes-128
