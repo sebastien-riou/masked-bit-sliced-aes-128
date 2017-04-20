@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/sebastien-riou/masked-bit-sliced-aes-128.svg?branch=master)](https://travis-ci.org/sebastien-riou/masked-bit-sliced-aes-128)
 # masked-bit-sliced-AES-128
 This demonstrate a masked, bit sliced implementation of AES-128.
 * masked: It use boolean masking to thwart DPA, template attacks and other side channel attacks.
