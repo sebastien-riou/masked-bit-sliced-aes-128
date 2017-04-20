@@ -28,5 +28,6 @@ addons:
     - clang
 
 script:
+  - ls -l
   - ./build_test.sh
   - ./masked-bit-sliced-aes-128
